@@ -2,4 +2,5 @@ name: Email Retitler
 id:   EmailRetitler
 key:  EmailRetitler
 
-init_app: $EmailRetitler::EmailRetitler::hi
+callbacks:
+    mail_filter: $EmailRetitler::EmailRetitler::retitle

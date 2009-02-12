@@ -1,26 +1,17 @@
 
 package EmailRetitler;
 
-use MT::Mail;
+sub retitle {
+    MT->log('O HAI SENDING MAIL!!!');
+    my ($cb, %params) = @_;
+    my ($headers, $body_ref) = @params{qw( headers body )};
 
-my $send = \&MT::Mail::send;
-
-my $new_send = sub {
-    my ($class, $headers, $body) = @_;
-
-    if ($body =~ s{ \A Subject: [ \t]* ([^\r\n]+) [\r\n]* }{}xms) {
+    if ($$body_ref =~ s{ \A Subject: [ \t]* ([^\r\n]+) [\r\n]* }{}xms) {
         my $subject = $1;
         $headers->{Subject} = $subject;
     }
 
-    $send->($class, $headers, $body);
-};
-
-{
-    no strict 'refs';
-    *MT::Mail::send = $new_send;
+    return 1;
 }
-
-sub hi { 1 }
 
 1;
