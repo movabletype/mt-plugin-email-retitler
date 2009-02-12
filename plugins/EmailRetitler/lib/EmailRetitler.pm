@@ -2,7 +2,6 @@
 package EmailRetitler;
 
 sub retitle {
-    MT->log('O HAI SENDING MAIL!!!');
     my ($cb, %params) = @_;
     my ($headers, $body_ref) = @params{qw( headers body )};
 
