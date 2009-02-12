@@ -1,0 +1,5 @@
+name: Email Retitler
+id:   EmailRetitler
+key:  EmailRetitler
+
+init_app: $EmailRetitler::EmailRetitler::hi
