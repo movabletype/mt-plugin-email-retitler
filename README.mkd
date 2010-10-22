@@ -1,0 +1,28 @@
+# Email Retitler, a plugin for Movable Type
+
+* Author: Six Apart
+* Copyright: 2009 Six Apart Ltd.
+* License: GPL
+* Site: <http://www.movabletype.org/>
+
+
+## Overview
+
+Retitles emails sent by Movable Type.
+
+
+## Installation
+
+1. Move the `EmailRetitler` plugin directory to the MT `plugins` directory.
+
+Should look like this when installed:
+
+    $MT_HOME/
+        plugins/
+            EmailRetitler/
+                [plugin files here]
+
+
+## Support
+
+This plugin is not an official Six Apart release, and as such support for this plugin is not available.
