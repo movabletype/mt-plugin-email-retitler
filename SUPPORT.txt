@@ -1,0 +1,1 @@
+This plugin is not an official $AuthorName release, and as such support from $AuthorName for this plugin is not available.
