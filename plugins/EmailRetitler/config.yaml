@@ -1,6 +1,8 @@
 name: Email Retitler
 id:   EmailRetitler
 key:  EmailRetitler
+description: Retitles emails.
+version: 0.1
 
 callbacks:
     mail_filter: $EmailRetitler::EmailRetitler::retitle
