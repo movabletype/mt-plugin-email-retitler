@@ -8,7 +8,7 @@
 
 ## Overview
 
-Retitles emails sent by Movable Type.
+This plugin makes it easy to customize the subject line of emails sent by Movable Type.
 
 
 ## Installation
@@ -22,6 +22,19 @@ Should look like this when installed:
             EmailRetitler/
                 [plugin files here]
 
+## Use
+
+For the type of email whose subject you'd like to modify, find the template. Email templates are most likely to be at System Overview > Templates > Email Templates.
+
+As an example, let's edit the New Comment template. This template is notifies an entry author when a new comment is submitted. The default subject line reads:
+
+    [<mt:BlogName>] New Comment Added to <mt:EntryTitle>
+
+To change this subject line include the following in the New Comment template:
+
+    Subject: A new comment was received on <mt:EntryTitle>, in the <mt:BlogName> blog!
+
+The modified subject must be preceded by "Subject: " for the Email Retitler to work. This new subject line is used for the subject of the email being sent, and is stripped from the body of the email before being sent.
 
 ## Support
 
