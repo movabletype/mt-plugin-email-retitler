@@ -1,8 +1,8 @@
 # Email Retitler, a plugin for Movable Type
 
 * Author: Six Apart
-* Copyright: 2009 Six Apart Ltd.
-* License: GPL
+* Copyright: 2009-2013 Six Apart Ltd.
+* License: MIT
 * Site: <http://www.movabletype.org/>
 
 
